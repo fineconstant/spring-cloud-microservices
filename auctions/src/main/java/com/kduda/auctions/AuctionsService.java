@@ -20,6 +20,6 @@ class AuctionsService {
     }
 
     String getStatus(String id){
-        return payments.getStatus(id);
+        return payments.checkStatus(id);
     }
 }
