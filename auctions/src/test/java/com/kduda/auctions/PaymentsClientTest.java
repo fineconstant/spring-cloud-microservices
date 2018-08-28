@@ -20,15 +20,14 @@ public class PaymentsClientTest {
     @Test
     public void shouldCheckPaymentStatus() {
         PaymentStatus actual = client.checkStatus("abcde");
-        PaymentStatus expected = new PaymentStatus("Status for id: [abcde]: OK");
+        PaymentStatus expected = new PaymentStatus("abcde","OK");
         assertThat(actual).isEqualTo(expected);
     }
 
-    // TODO: tests with DTO and JSON
     @Test
     public void shouldCreatePayment() {
-        String actual = client.createPayment("12345-abcd");
-        final String expected = "Created new payment with id: [12345-abcd]";
+        PaymentCreationStatus actual = client.createPayment("12345-abcd");
+        PaymentCreationStatus expected = new PaymentCreationStatus("Payment created");
         assertThat(actual).isEqualTo(expected);
     }
 }

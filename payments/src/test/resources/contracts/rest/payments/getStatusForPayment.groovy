@@ -10,6 +10,8 @@ Contract.make {
         headers {
             contentType(applicationJson())
         }
-        body("status": "Status for id: [abcde]: OK")
+        body("id": "abcde",
+             "status": "OK",
+             "description": "Success!")
     }
 }

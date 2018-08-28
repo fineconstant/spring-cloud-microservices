@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 class PaymentsClientFallback implements PaymentsClient {
     @Override
     public PaymentStatus checkStatus(String id) {
-        return new PaymentStatus("Status fallback");
+        return new PaymentStatus(id, "Status fallback");
     }
 
     @Override
-    public String createPayment(String id) {
-        return "Payment unavailable";
+    public PaymentCreationStatus createPayment(String id) {
+        return new PaymentCreationStatus("Payment unavailable");
     }
 }

@@ -110,9 +110,8 @@
                     <basePackageForTests>com.kduda.payments</basePackageForTests>
                     <baseClassForTests>com.kduda.payments.BaseContractTest</baseClassForTests>
                     <testFramework>JUNIT</testFramework>
-                    <!--Do not test contracts inside upcoming directory e.g. not yet implemented-->
+                    <!--Do not test contracts inside 'upcoming' directory e.g. may be not yet implemented-->
                     <!--May be based on some property e.g. for PRD build DO NOT IGNORE any contracts-->
-                    <!--TODO: make contract-->
                     <ignoredFiles>
                         <ignoredFile>**/upcoming/**</ignoredFile>
                     </ignoredFiles>

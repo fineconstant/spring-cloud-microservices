@@ -14,7 +14,7 @@ class AuctionsController {
     }
 
     @PostMapping("buy")
-    String buy() {
+    PaymentCreationStatus buy() {
         return auctionsService.buyItem();
     }
 

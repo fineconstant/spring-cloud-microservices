@@ -14,7 +14,7 @@ class AuctionsService {
         this.payments = payments;
     }
 
-    String buyItem(){
+    PaymentCreationStatus buyItem(){
         String id = UUID.randomUUID().toString();
         return payments.createPayment(id);
     }

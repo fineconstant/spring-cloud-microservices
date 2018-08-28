@@ -6,13 +6,13 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 class PaymentsService {
-    String createPayment(String id) {
+    PaymentCreationStatus createPayment(String id) {
         log.info("Creating new payment with id: [" + id + "]");
-        return "Created new payment with id: [" + id + "]";
+        return new PaymentCreationStatus(id, "Payment created");
     }
 
     PaymentStatus statusForPayment(String id) {
         log.info("Checking status for payment with id: [" + id + "]");
-        return new PaymentStatus("Status for id: [" + id + "]: OK");
+        return new PaymentStatus(id, "OK", "Success!");
     }
 }

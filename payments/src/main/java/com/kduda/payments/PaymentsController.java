@@ -13,9 +13,8 @@ class PaymentsController {
         this.paymentsService = paymentsService;
     }
 
-    // TODO: tests with DTO and JSON
-    @PostMapping("create")
-    String createPayment(@RequestBody String id) {
+    @PostMapping(value = "create", produces = MediaType.APPLICATION_JSON_VALUE)
+    PaymentCreationStatus createPayment(@RequestBody String id) {
         return paymentsService.createPayment(id);
     }
 

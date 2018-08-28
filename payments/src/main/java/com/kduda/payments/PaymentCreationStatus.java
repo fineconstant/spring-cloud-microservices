@@ -1,9 +1,10 @@
-package com.kduda.auctions;
+package com.kduda.payments;
 
 import lombok.Value;
 
+
 @Value
-class PaymentStatus {
+class PaymentCreationStatus {
     String id;
     String status;
 }
