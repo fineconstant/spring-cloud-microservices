@@ -1,5 +1,6 @@
 package com.kduda.payments;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -12,13 +13,14 @@ class PaymentsController {
         this.paymentsService = paymentsService;
     }
 
+    // TODO: tests with DTO and JSON
     @PostMapping("create")
     String createPayment(@RequestBody String id) {
         return paymentsService.createPayment(id);
     }
 
-    @GetMapping("status/{id}")
-    String statusForPayment(@PathVariable String id) {
+    @GetMapping(value = "status/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    PaymentStatus statusForPayment(@PathVariable String id) {
         return paymentsService.statusForPayment(id);
     }
 }

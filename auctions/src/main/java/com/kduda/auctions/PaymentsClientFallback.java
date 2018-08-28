@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 class PaymentsClientFallback implements PaymentsClient {
     @Override
-    public String checkStatus(String id) {
-        return "Status fallback";
+    public PaymentStatus checkStatus(String id) {
+        return new PaymentStatus("Status fallback");
     }
 
     @Override

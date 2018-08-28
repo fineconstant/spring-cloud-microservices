@@ -11,8 +11,8 @@ class PaymentsService {
         return "Created new payment with id: [" + id + "]";
     }
 
-    String statusForPayment(String id) {
+    PaymentStatus statusForPayment(String id) {
         log.info("Checking status for payment with id: [" + id + "]");
-        return "Status for id: [" + id + "]: OK";
+        return new PaymentStatus("Status for id: [" + id + "]: OK");
     }
 }

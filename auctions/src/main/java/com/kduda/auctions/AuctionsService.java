@@ -19,7 +19,7 @@ class AuctionsService {
         return payments.createPayment(id);
     }
 
-    String getStatus(String id){
+    PaymentStatus getStatus(String id){
         return payments.checkStatus(id);
     }
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @FeignClient(value = "payments", fallback = PaymentsClientFallback.class)
 interface PaymentsClient {
     @GetMapping("payments/status/{id}")
-    String checkStatus(@PathVariable("id") String id);
+    PaymentStatus checkStatus(@PathVariable("id") String id);
 
     @PostMapping("payments/create")
     String createPayment(String id);

@@ -1,6 +1,5 @@
 import org.springframework.cloud.contract.spec.Contract
 
-
 Contract.make {
     request {
         method(GET())
@@ -8,6 +7,9 @@ Contract.make {
     }
     response {
         status(OK())
-        body("Status for id: [abcde]: OK")
+        headers {
+            contentType(applicationJson())
+        }
+        body("status": "Status for id: [abcde]: OK")
     }
 }

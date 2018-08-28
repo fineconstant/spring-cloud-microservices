@@ -1,7 +1,7 @@
 package com.kduda.auctions;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
 
 
 @RestController
@@ -15,11 +15,11 @@ class AuctionsController {
 
     @PostMapping("buy")
     String buy() {
-       return auctionsService.buyItem();
+        return auctionsService.buyItem();
     }
 
-    @GetMapping("status/{id}")
-    String statusForId(@PathVariable String id) {
+    @GetMapping(value = "status/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    PaymentStatus statusForId(@PathVariable String id) {
         return auctionsService.getStatus(id);
     }
 
