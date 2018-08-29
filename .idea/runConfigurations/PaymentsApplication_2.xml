@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PaymentsApplication-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="payments" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.kduda.payments.PaymentsApplication" />
+    <option name="PROGRAM_PARAMETERS" value="--server.port=8082" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

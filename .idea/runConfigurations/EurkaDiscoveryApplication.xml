@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="EurkaDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="eureka-discovery" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.kduda.eureka.discovery.EurekaDiscoveryApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
