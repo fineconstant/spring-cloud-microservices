@@ -11,7 +11,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>consul-discovery</module>
         <module>eureka-discovery</module>
         <module>auctions</module>
         <module>payments</module>
