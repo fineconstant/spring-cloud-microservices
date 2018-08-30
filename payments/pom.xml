@@ -23,6 +23,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>10</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
+        <spring-boot-admin-starter-client.version>2.0.2</spring-boot-admin-starter-client.version>
     </properties>
 
     <dependencies>
@@ -52,6 +53,13 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!--Spring Boot Admin Client-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring-boot-admin-starter-client.version}</version>
         </dependency>
 
         <!--Logging-->
@@ -119,6 +127,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--Build info for Spring Boot Admin-->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <!--Spring Contract Maven configuration-->
