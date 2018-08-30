@@ -35,6 +35,7 @@
 
 * #### Hystrix Circuit Breaker
     * `auctions` service
+    * Hystrix Dashboard for HTTP requests
 
 * #### Log tracing and correlation
     * Spring Cloud Sleuth
