@@ -15,7 +15,7 @@
         <module>auctions</module>
         <module>payments</module>
         <module>rest-api-test</module>
-        <module>zipkin-dashboard</module>
         <module>spring-admin</module>
+        <module>zipkin-server</module>
     </modules>
 </project>
