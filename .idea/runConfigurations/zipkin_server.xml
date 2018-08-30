@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="zipkin-server" type="docker-deploy" factoryName="docker-image" singleton="true" server-name="Docker">
+    <deployment type="docker-image">
+      <settings>
+        <option name="JSONFilePath" value="" />
+        <option name="command" value="" />
+        <option name="commandLineOptions" value="" />
+        <option name="containerName" value="zipkin-server" />
+        <option name="entrypoint" value="" />
+        <option name="imageTag" value="openzipkin/zipkin" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="9411" />
+              <option name="hostPort" value="9411" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="startBrowserSettings">
+          <browser url="http://127.0.0.1" />
+        </option>
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
