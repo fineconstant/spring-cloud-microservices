@@ -1,0 +1,17 @@
+
+
+# Auctions status for id
+GET http://localhost:8000/auctions/status/12345
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+
+# Auctions buy
+POST http://localhost:8000/auctions/buy
+Accept: */*
+Cache-Control: no-cache
+
+###
+
