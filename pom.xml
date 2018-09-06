@@ -12,10 +12,11 @@
 
     <modules>
         <module>eureka-discovery</module>
+        <module>gateway</module>
         <module>auctions</module>
         <module>payments</module>
-        <module>rest-api-test</module>
         <module>spring-admin</module>
         <module>zipkin-server</module>
+        <module>rest-api-test</module>
     </modules>
 </project>
